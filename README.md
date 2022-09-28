@@ -1,5 +1,9 @@
 # revert-dumb
+[![Tox](https://github.com/theresnotime/revert-dumb/actions/workflows/tox.yml/badge.svg)](https://github.com/theresnotime/revert-dumb/actions/workflows/tox.yml)
+
 Run a potentially dumb command and revert it if it "fails" (_i.e. you can't cancel the timeout with Ctrl-C because you've just blocked SSH and been disconnected_)
+
+![GIF animation of the revert-dumb workflow](render1664399973923.gif)
 
 # Usage example
 This would run `sudo ufw enable`, wait 2 minutes, and then run `sudo ufw disable` if not cancelled with `Ctrl-C` (thus proving the user hasn't been locked out or something...)
