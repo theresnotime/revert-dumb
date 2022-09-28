@@ -20,6 +20,14 @@ revert-dumb --time 120 --action 'sudo ufw enable' --recovery 'sudo ufw disable'
 # Tips
 - You can always invoke a script (for either `--action` or `--recovery`) for complex commands — e.g. `--recovery 'bash /path/to/script.sh'`
 
+
+## Alias
+You can use the binaries in the release, but tbh I'd just run the python script directly seeing as it doesn't depend on anything non-standard (afaik) — I'm sure someone will say this is a bad idea, but I just added this to my `.bashrc`
+
+```bash
+alias revert-dumb='python3 ~/revert-dumb/revert-dumb.py'
+```
+
 # A note for me
 ## Building
  - `python -m nuitka --standalone --onefile --output-dir=out .\revert-dumb.py`
