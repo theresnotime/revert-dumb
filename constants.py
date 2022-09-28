@@ -1,4 +1,4 @@
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 GITHUB = "https://github.com/theresnotime/revert-dumb"
 TIME_MAX = 3600
 TIME_MIN = 10
