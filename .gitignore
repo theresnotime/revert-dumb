@@ -1,0 +1,6 @@
+venv/
+.tox/
+.vscode/
+revert-dumb.build/
+__pycache__/
+out/
