@@ -8,7 +8,7 @@ import constants
 
 def writeHelp() -> None:
     """Write the help text to the console."""
-    print("== Options ==")
+    print("# Options")
     print(
         "-t, --time: amount of time in seconds to wait before",
         "running recovery commands. (10 - 3600, default 120)",
@@ -20,7 +20,12 @@ def writeHelp() -> None:
         "-h, --help: Show this help text",
         "-v, --version: Show version information",
         "==========",
+        "# Example",
         sep="\n",
+    )
+    print(
+        "revert-dumb --time 60 --action 'sudo ufw enable'",
+        "--recovery 'sudo ufw disable'",
     )
 
 
